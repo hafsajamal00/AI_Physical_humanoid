@@ -1,0 +1,92 @@
+.card {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+
+  /* Spacing */
+  padding: var(--space-lg);
+
+  /* Colors */
+  background-color: var(--color-bg-card);
+  border: var(--border-width) solid var(--color-border);
+  color: var(--color-text);
+
+  /* Borders */
+  border-radius: var(--radius-lg);
+
+  /* Shadow */
+  box-shadow: var(--shadow-sm);
+
+  /* Transitions */
+  transition: all var(--transition-base) var(--ease-in-out);
+
+  /* Hover state */
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.icon {
+  /* Icon container */
+  width: 48px;
+  height: 48px;
+  color: var(--color-primary);
+}
+
+.number {
+  /* Module number badge */
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  /* Title styling */
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+}
+
+.description {
+  /* Description text */
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text-muted);
+  margin: 0;
+  flex-grow: 1;
+}
+
+.link {
+  /* CTA link */
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: var(--space-md);
+  }
+
+  .title {
+    font-size: var(--font-size-base);
+  }
+}

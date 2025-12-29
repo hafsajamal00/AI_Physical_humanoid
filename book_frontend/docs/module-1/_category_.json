@@ -1,0 +1,8 @@
+{
+  "label": "Module 1: The Robotic Nervous System (ROS 2)",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Master ROS 2 as the middleware layer connecting AI intelligence to robotic embodiment. Learn nodes, topics, services, and URDF modeling for humanoid systems."
+  }
+}
